@@ -26,11 +26,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  creationTimestamp: null
   labels:
     kustomize.toolkit.fluxcd.io/name: flux-system
     kustomize.toolkit.fluxcd.io/namespace: flux-system
   name: apache
+  namespace: development
 spec:
   ports:
   - port: 80
